@@ -1,0 +1,23 @@
+# Bandit Level 16 → Level 17
+
+## Goal
+Find a port between 31000–32000 that:
+- is open  
+- uses SSL  
+- returns the next password  
+
+## Commands Used
+nmap  
+openssl s_client  
+
+## Process
+1. Scanned ports using nmap.
+2. Identified which spoke SSL using openssl.
+3. Sent current password and retrieved next credentials.
+
+## Final Commands
+nmap -p31000-32000 localhost  
+openssl s_client -connect localhost:<correct_port>
+
+## Password
+[redacted]
