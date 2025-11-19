@@ -1,0 +1,22 @@
+# Bandit Level 4 → Level 5
+
+## Goal
+Find the only human-readable file inside the "inhere" directory.
+
+## Commands Used
+cd inhere  
+file *  
+cat <filename>
+
+## Process
+1. Navigated into "inhere".
+2. Used `file *` to check file types — most were binary/garbage.
+3. Found the one that was human-readable.
+4. Used `cat` to reveal the password.
+
+## Final Command
+file *  
+cat <human-readable-file>
+
+## Password
+[redacted]
