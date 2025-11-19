@@ -1,0 +1,18 @@
+# Bandit Level 15 → Level 16
+
+## Goal
+Submit the password to port 30001 using SSL/TLS.
+
+## Commands Used
+openssl s_client  
+
+## Process
+1. nc didn’t work because SSL was required.
+2. Used openssl s_client to initiate a TLS connection.
+3. Entered the password and received the next one.
+
+## Final Command
+openssl s_client -connect localhost:30001
+
+## Password
+[redacted]
