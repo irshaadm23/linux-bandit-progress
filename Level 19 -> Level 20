@@ -1,0 +1,18 @@
+# Bandit Level 19 → Level 20
+
+## Goal
+Use the setuid binary in the home directory to read bandit20’s password.
+
+## Commands Used
+ls -l  
+./bandit20-do cat /etc/bandit_pass/bandit20
+
+## Process
+1. Checked permissions → binary runs with bandit20 privileges.
+2. Passing a command to it executes as bandit20.
+
+## Final Command
+./bandit20-do cat /etc/bandit_pass/bandit20
+
+## Password
+[redacted]
