@@ -1,0 +1,17 @@
+# Bandit Level 14 → Level 15
+
+## Goal
+Send the current level's password to port 30000 on localhost.
+
+## Commands Used
+nc
+
+## Process
+1. Used netcat to connect to localhost on port 30000.
+2. Pasted the password → received the next one.
+
+## Final Command
+nc localhost 30000
+
+## Password
+[redacted]
