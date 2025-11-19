@@ -1,0 +1,17 @@
+# Bandit Level 11 → Level 12
+
+## Goal
+Decode a ROT13-encoded string inside data.txt.
+
+## Commands Used
+tr  
+
+## Process
+1. A ROT13 cipher rotates letters by 13 positions.
+2. Used `tr` to translate characters.
+
+## Final Command
+cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+
+## Password
+[redacted]
