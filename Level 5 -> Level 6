@@ -1,0 +1,26 @@
+# Bandit Level 5 → Level 6
+
+## Goal
+Find a file under "inhere" that:
+- is human readable  
+- is 1033 bytes in size  
+- is NOT executable  
+
+## Commands Used
+find  
+file  
+cat
+
+## Process
+1. Used `find` with conditions to filter files:
+   - size: 1033 bytes
+   - type: file
+   - not executable
+2. Located the matching file.
+3. Read it using `cat`.
+
+## Final Command
+find ./inhere -type f -size 1033c ! -executable
+
+## Password
+[redacted]
