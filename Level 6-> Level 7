@@ -1,0 +1,22 @@
+# Bandit Level 6 → Level 7
+
+## Goal
+Locate a file on the entire filesystem with:
+- user owner: bandit7  
+- group owner: bandit6  
+- size: 33 bytes  
+
+## Commands Used
+find  
+cat
+
+## Process
+1. Searched from root `/` with the required ownership and size.
+2. Suppressed permission errors using `2>/dev/null`.
+3. Located the file and read its contents.
+
+## Final Command
+find / -user bandit7 -group bandit6 -size 33c 2>/dev/null
+
+## Password
+[redacted]
