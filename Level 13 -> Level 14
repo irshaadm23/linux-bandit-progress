@@ -1,0 +1,21 @@
+# Bandit Level 13 → Level 14
+
+## Goal
+Use the provided SSH private key to log in as bandit14.
+
+## Commands Used
+ssh  
+chmod  
+
+## Process
+1. Copied the SSH key to my machine or used it directly.
+2. Set correct permissions using chmod 600.
+3. Logged in with:
+
+   ssh -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2220
+
+## Final Command
+ssh -i sshkey.private bandit14@localhost -p 2220
+
+## Password
+(no password — login gives access)
