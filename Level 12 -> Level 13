@@ -1,0 +1,25 @@
+ # Bandit Level 12 → Level 13
+
+## Goal
+Extract a file that has been repeatedly compressed and stored as a hexdump.
+
+## Commands Used
+xxd  
+file  
+gzip  
+bzip2  
+tar  
+mkdir  
+cp  
+
+## Process
+1. Converted hexdump back to binary using `xxd -r`.
+2. Used `file` to detect compression type.
+3. Repeatedly decompressed (gzip, bzip2, tar).
+4. Eventually obtained a file containing the password.
+
+## Final Command (first step)
+xxd -r data.txt > data
+
+## Password
+[redacted]
