@@ -1,0 +1,19 @@
+# Bandit Level 1 → Level 2
+
+## Goal
+Read the password stored in a file called "-" located in the home directory.
+
+## Commands Used
+ls  
+cat ./-
+
+## Process
+1. Listed files using `ls` and found a file named `-`.
+2. Using `cat -` doesn't work because "-" is interpreted as stdin.
+3. To treat "-" as a literal file, you must reference it with a path: `./-`.
+
+## Final Command
+cat ./-
+
+## Password
+[redacted]
