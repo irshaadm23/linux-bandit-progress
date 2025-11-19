@@ -1,0 +1,18 @@
+# Bandit Level 17 → Level 18
+
+## Goal
+Find the line that is different between passwords.old and passwords.new.
+
+## Commands Used
+diff
+
+## Process
+1. Listed home directory and saw two files.
+2. Used diff to compare them.
+3. The changed line contains the password.
+
+## Final Command
+diff passwords.old passwords.new
+
+## Password
+[redacted]
