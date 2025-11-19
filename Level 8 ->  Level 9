@@ -1,0 +1,18 @@
+# Bandit Level 8 → Level 9
+
+## Goal
+Find the line in data.txt that occurs only once.
+
+## Commands Used
+sort  
+uniq -u
+
+## Process
+1. Sorted the file so duplicate lines group together.
+2. Used `uniq -u` to print only unique (non-repeated) lines.
+
+## Final Command
+sort data.txt | uniq -u
+
+## Password
+[redacted]
