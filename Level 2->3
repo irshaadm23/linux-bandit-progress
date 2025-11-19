@@ -1,0 +1,20 @@
+# Bandit Level 2 → Level 3
+
+## Goal
+Read the password stored in a file with spaces in its name: "spaces in this filename".
+
+## Commands Used
+ls  
+cat "spaces in this filename"  
+cat spaces\ in\ this\ filename
+
+## Process
+1. Listed files and saw a file with spaces.
+2. Spaces break commands unless escaped or quoted.
+3. Used either backslashes or quotes to read the file.
+
+## Final Command
+cat spaces\ in\ this\ filename
+
+## Password
+[redacted]
