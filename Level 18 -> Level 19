@@ -1,0 +1,20 @@
+# Bandit Level 18 → Level 19
+
+## Goal
+Read the file "readme" despite .bashrc force logging you out.
+
+## Commands Used
+ssh with:  
+ssh -t  
+or  
+ssh 'command'
+
+## Process
+1. Normal login logs out instantly because .bashrc calls "exit".
+2. Bypassed by executing a command directly with SSH.
+
+## Final Command
+ssh bandit18@localhost -p2220 "cat readme"
+
+## Password
+[redacted]
