@@ -1,0 +1,17 @@
+# Bandit Level 10 → Level 11
+
+## Goal
+Decode a Base64-encoded string from data.txt.
+
+## Commands Used
+base64 -d
+
+## Process
+1. Viewed the file contents and confirmed Base64 encoding.
+2. Decoded it using `base64 -d`.
+
+## Final Command
+base64 -d data.txt
+
+## Password
+[redacted]
