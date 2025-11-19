@@ -1,0 +1,18 @@
+# Bandit Level 9 → Level 10
+
+## Goal
+Find the human-readable string in data.txt that is preceded by "=" characters.
+
+## Commands Used
+strings  
+grep
+
+## Process
+1. Used `strings` to extract readable text from a binary file.
+2. Filtered for lines starting with "====".
+
+## Final Command
+strings data.txt | grep "="
+
+## Password
+[redacted]
