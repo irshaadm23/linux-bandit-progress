@@ -1,0 +1,17 @@
+# Bandit Level 7 → Level 8
+
+## Goal
+Find the password in data.txt next to the word "millionth".
+
+## Commands Used
+grep
+
+## Process
+1. Used grep to search for the word "millionth".
+2. Output contained the password.
+
+## Final Command
+grep "millionth" data.txt
+
+## Password
+[redacted]
